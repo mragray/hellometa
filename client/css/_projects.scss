@@ -1,0 +1,19 @@
+.projects {
+  background: $red;
+}
+
+.project-title {
+  color: $white;
+  position: relative;
+  z-index: 2;
+}
+.project {
+  position: relative;
+  border-bottom: 1px solid $green;
+  height: 150px;
+}
+
+.project.gcc {
+  background: url('img/GCC-web-development.jpg') center center no-repeat fixed;
+  background-size: cover;
+}

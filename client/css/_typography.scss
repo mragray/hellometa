@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+@include ck-font-face(open-light, '/fonts/open/open-light');
+@include ck-font-face(open-light, '/fonts/open/open-bold', light);
+
+@include ck-font-face(orbit, '/fonts/orbit/orbit');
+
+$orbit: orbit;
+
+$light: open-light;
+$bold: open-bold;
+
+h1,h2,h3,h4,h5 {
+  font-family: $orbit, helvetica, sans-serif;
+}
+
+h1 {
+  @include font-size(35);
+  margin-bottom: 20px;
+}
+
+h2 {
+  @include font-size(30);
+  margin-bottom: 20px;
+}
+
+h3 {
+  @include font-size(25);
+  margin-bottom: 20px;
+}
+
+h4 {
+  @include font-size(20);
+  margin-bottom: 20px;
+}
+
+h5 {
+  @include font-size(15);
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: $light;
+  @include font-size(20);
+}
