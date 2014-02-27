@@ -13,7 +13,7 @@
     top: 0; right: 0; bottom: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($black, 0.9);
+    background: rgba(darken($green, 55%), 0.5);
   }
 }
 
@@ -28,21 +28,21 @@
   color: $white;
   transition: background ease 500ms;
   &:nth-of-type(1) { 
-    background: rgba($white,0.1); 
+    background: rgba($white,0.15); 
     // left: -60px;
     .article-title { color: $green; }
   }
   &:nth-of-type(2) {  
-    background: rgba($white,0.05); 
+    background: rgba($white,0.1); 
     // right: -60px;
     .article-title { color: $blue; }
   }
   &:nth-of-type(3) {  
-    background: rgba($white,0.01); 
+    background: rgba($white,0.05); 
     // right: -60px;
     .article-title { color: $orange; }
   }
   &:hover {
-    background: rgba($white,0.3); 
+    background: rgba($white,0.2); 
   }
 }

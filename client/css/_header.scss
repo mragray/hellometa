@@ -1,6 +1,5 @@
 .site-header {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @extend %clearfix;
   border-bottom: 1px solid rgba($green, 0.2);
 }
 

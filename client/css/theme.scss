@@ -11,12 +11,16 @@
 @import 'header';
 @import 'footer';
 
+// Things
+@import 'button';
+
 // Components
 @import 'styleguide';
 @import 'hero';
 @import 'articles';
 @import 'projects';
 @import 'skills';
+
 
 body {
   background: url('img/stardust.png') repeat fixed;

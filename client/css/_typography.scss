@@ -7,10 +7,17 @@ html {
 
 @include ck-font-face(orbit, '/fonts/orbit/orbit');
 
+@include ck-font-face(aleg, '/fonts/aleg/aleg-thin');
+@include ck-font-face(alegi, '/fonts/aleg/aleg-i');
+
+
 $orbit: orbit;
 
 $light: open-light;
 $bold: open-bold;
+
+$aleg: aleg;
+$alegi: alegi;
 
 h1,h2,h3,h4,h5 {
   font-family: $orbit, helvetica, sans-serif;
