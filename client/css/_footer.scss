@@ -1,3 +1,9 @@
 .site-footer {
-  background: $blue;
+  @extend %clearfix;
+  min-height: 200px;
+}
+
+.site-footer-content {
+  @include container();
+  color: $white;
 }

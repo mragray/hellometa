@@ -1,3 +1,9 @@
 .site-header {
-  background: $blue;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba($green, 0.2);
+}
+
+.site-navigation {
+  float: right;
 }

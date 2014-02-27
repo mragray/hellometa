@@ -1,0 +1,10 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: $white;
+  text-align: center;
+}
+
+.hero-container {
+  @include container();
+}

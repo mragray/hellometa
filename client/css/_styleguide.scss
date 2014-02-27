@@ -1,0 +1,26 @@
+.colors {
+  @include container();
+  text-align: center;
+  li {
+    @include span(200);
+    height: 100px;
+  }
+}
+
+.color {  
+  &.blue { background: $blue; }
+  &.green { background: $green; }
+  &.yellow { background: $yellow; }
+  &.red { background: $red; }
+  &.orange { background: $orange; }
+}
+
+.color-alt {
+  &.blue { background: rgba($blue, 0.5); }
+  &.green { background: rgba($green, 0.5); }
+  &.yellow { background: rgba($yellow, 0.5); }
+  &.red { background: rgba($red, 0.5); }
+  &.orange { background: rgba($orange, 0.5); }
+}
+
+

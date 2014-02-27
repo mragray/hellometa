@@ -1,11 +1,13 @@
 <template name="articles">
   <section class="articles">
-    <h2 class="section-title">Articles</h2>
-    {{#each featuredArticles}}
-      <article class="article">
-        <h3 class="article-title">{{title}}</h3>
-        <p class="article-excerpt">{{excerpt}}</p>
-      </article>
-    {{/each}}
+    <div class="articles-content">
+      <h2 class="section-title">Captain's Log</h2>
+      {{#each featuredArticles}}
+        <article class="article">
+          <h3 class="article-title">{{title}}</h3>
+          <p class="article-excerpt">{{excerpt}}</p>
+        </article>
+      {{/each}}
+    </div>
   </section>
 </template>

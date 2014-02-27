@@ -1,19 +1,37 @@
 .projects {
-  background: $red;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background: rgba($white, 0.09);
+  overflow: hidden;
+}
+
+.projects-container {
+}
+
+.project {
+  @include container();
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .project-title {
-  color: $white;
+  color: $yellow;
   position: relative;
-  z-index: 2;
-}
-.project {
-  position: relative;
-  border-bottom: 1px solid $green;
-  height: 150px;
+  z-index: 999;
 }
 
-.project.gcc {
+.project-container.gcc {
   background: url('img/GCC-web-development.jpg') center center no-repeat fixed;
+  background-size: cover;
+}
+
+.project-container.parts {
+  background: url('img/parts.jpg') center center no-repeat fixed;
+  background-size: cover;
+}
+
+.project-container.best {
+  background: url('img/computer.jpg') center center no-repeat fixed;
   background-size: cover;
 }

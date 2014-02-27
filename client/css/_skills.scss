@@ -1,0 +1,12 @@
+.skills {
+  @extend %clearfix;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url('img/stardust.png') repeat fixed;
+}
+
+.skills-container {
+  @include container();
+  color: $white;
+}

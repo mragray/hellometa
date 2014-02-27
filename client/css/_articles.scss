@@ -1,3 +1,48 @@
 .articles {
-  background: $green;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  background: url('img/ship.jpg') no-repeat fixed;
+  background-size: cover;
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($black, 0.9);
+  }
+}
+
+.articles-content {
+  @include container(640);
+}
+
+.article {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;  
+  color: $white;
+  transition: background ease 500ms;
+  &:nth-of-type(1) { 
+    background: rgba($white,0.1); 
+    // left: -60px;
+    .article-title { color: $green; }
+  }
+  &:nth-of-type(2) {  
+    background: rgba($white,0.05); 
+    // right: -60px;
+    .article-title { color: $blue; }
+  }
+  &:nth-of-type(3) {  
+    background: rgba($white,0.01); 
+    // right: -60px;
+    .article-title { color: $orange; }
+  }
+  &:hover {
+    background: rgba($white,0.3); 
+  }
 }

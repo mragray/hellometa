@@ -1,19 +1,15 @@
 <template name="projects">
   <section class="projects">
-    <div class="featured-projects">
-      {{#each featuredProjects}}
-      <article class="project {{slug}}">
-        <h3 class="project-title">{{title}}</h3>
-        <p>{{description}}</p>
-      </article>
-      {{/each}}
-    </div>
-    <div class="sub-projects">
-    {{#each subProjects}}
-      <article class="sub-project">
-        <h3 class="sub-project-title">{{title}}</h3>
-      </article>
-    {{/each}}
-    </div>
-  </section>
+    <div class="projects-container">
+        <h2 class="section-title">Recent Work</h2>
+        {{#each featuredProjects}}
+        <div class="project-container {{slug}}">
+          <article class="project">
+            <h3 class="project-title">{{title}}</h3>
+            <p>{{description}}</p>
+          </article>
+        </div>
+        {{/each}}
+    </div> <!-- projects -->
+  </section> <!-- projects-container -->
 </template>
